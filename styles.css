@@ -1,0 +1,340 @@
+/* styles.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #f0f2f5; /* Light grey for a subtle background */
+    color: #333;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* Smooth Scrolling for Internal Links */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #2c3e50; /* Darker blue-grey for a modern look */
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.yu{
+    color: rgb(241, 118, 118);
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #1abc9c; /* Bright teal for hover effect */
+}
+
+/* Hero Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #ecf0f1; /* Light grey background */
+    text-align: center;
+    color: #2c3e50;
+    padding: 0 1rem;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: slideDown 1s ease forwards;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+#home button {
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#home button:hover {
+    background: #16a085; /* Darker shade for hover */
+    transform: translateY(-3px);
+}
+
+/* About Me Section */
+#about {
+    background: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+    border-top: 1px solid #dcdde1;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skill {
+    background: #1abc9c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+#projects {
+    background: #f0f2f5; /* Softer grey background */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.project {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.project a {
+    color: #3498db; /* Bright blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #2980b9; /* Darker blue for hover */
+}
+
+/* Research Section */
+#research {
+    background: #ecf0f1;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#research h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.paper {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.paper:hover {
+    transform: translateY(-5px);
+}
+
+.paper h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.paper p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.paper a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    background: #2c3e50;
+    padding: 4rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #34495e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+form button {
+    background: #1abc9c;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #16a085;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background: #2c3e50;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        display: none;
+    }
+
+    nav ul.active {
+        display: block;
+    }
+
+    nav a {
+        padding: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    #home {
+        height: auto;
+        padding: 4rem 1rem;
+    }
+
+    .skills {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
